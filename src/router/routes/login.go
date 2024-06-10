@@ -7,7 +7,7 @@ import (
 
 var loginRoutes = []Route{
 	{
-		Uri:                    "/sessions",
+		Uri:                    "/auth/login",
 		Method:                 http.MethodPost,
 		Function:               controllers.Login,
 		RequiresAuthentication: false,

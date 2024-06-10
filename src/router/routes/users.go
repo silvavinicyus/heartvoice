@@ -7,7 +7,7 @@ import (
 
 var userRoutes = []Route{
 	{
-		Uri:                    "/users",
+		Uri:                    "/auth/register",
 		Method:                 http.MethodPost,
 		Function:               controllers.CreateUsers,
 		RequiresAuthentication: false,

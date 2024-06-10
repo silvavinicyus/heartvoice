@@ -12,3 +12,14 @@ CREATE TABLE users(
   password text not null,
   createdAt timestamp default current_timestamp()
 ) ENGINE=INNODB;
+
+DROP TABLE IF EXISTS guilds;
+
+CREATE TABLE guilds (
+  id int auto_increment primary key,
+  name varchar(50) not null unique,
+  imageKey varchar(255) unique,
+  description TEXT not null,
+  createdAt timestamp default current_timestamp(),
+  updatedAt timestamp default current_timestamp()
+) ENGINE=INNODB;
